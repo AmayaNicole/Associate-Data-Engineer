@@ -1,3 +1,10 @@
+"""
+ACLARACION: El siguiente código representa un diseño conceptual y una simulación de cómo se 
+automatizaría este flujo en un servidor real usando Apache Airflow. Debido a que 
+en el entorno local de desarrollo se priorizó la estabilidad para ejecutar el 
+script principal sin conflictos de librerías, este archivo NO se ejecuta en la 
+computadora local, funciona  como una propuesta de arquitectura.
+
 from datetime import datetime, timedelta
 from airflow import DAG
 from airflow.operators.bash import BashOperator
@@ -35,3 +42,5 @@ with DAG(
 
     # Definición de dependencias
     task_etl_snowflake >> task_analisis_fraude
+
+"""
