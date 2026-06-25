@@ -111,7 +111,7 @@ def cargar_a_supabase_snowflake(dim_cli, dim_com, fact_trans):
         print(f"❌ Error crítico durante la carga en la base de datos: {e}")
 
 if __name__ == "__main__":
-    # '../' sale de python_scripts y 'datos/' entra a la carpeta del CSV
+    # ruta
     archivo_origen = "../datos/transacciones_diarias.csv"
     
     # Ejecución completa del proceso ETL
